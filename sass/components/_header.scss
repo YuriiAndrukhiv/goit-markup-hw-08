@@ -1,0 +1,77 @@
+/*----------------------HEADER--------------------------*/
+header {
+  border-bottom: 1px solid #ececec;
+
+  /* Header-nav */
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// /* Header logo */
+// .logo {
+//   text-decoration: none;
+// }
+
+// .first-word-logo {
+//   @include logo($accent-color);
+// }
+
+// .second-word-logo {
+//   @include logo($additional-black-color);
+// }
+
+/* Site-nav  */
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.nav-item {
+  position: relative;
+
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.nav-link {
+  @extend %header-links;
+  color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+/* Contacts-nav */
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+
+  text-decoration: none;
+  color: $secondary-text-color;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 30px;
+}
+
+.contacts-link {
+  @extend %header-links;
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+
+  fill: currentColor;
+}

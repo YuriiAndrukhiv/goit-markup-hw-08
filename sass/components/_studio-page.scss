@@ -1,0 +1,271 @@
+/*----------------------STUDIO--------------------------*/
+
+/* Hero */
+.hero {
+  margin-bottom: 94px;
+
+  text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/hero-image.jpg');
+  background-color: $primary-text-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  color: $white-color;
+}
+
+.hero-button {
+  @extend %buttons;
+
+  padding: 10px 32px;
+  margin-bottom: 200px;
+
+  cursor: pointer;
+  border: none;
+}
+
+/* Section */
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Feature */
+
+.feature {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-item {
+  width: 270px;
+  height: 251px;
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.background {
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 10px;
+
+  background-color: $background-color;
+}
+
+.feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-text-color;
+}
+
+/* Our work */
+
+.work {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item {
+  position: relative;
+
+  & + & {
+    margin-left: 45px;
+  }
+}
+
+.work-image {
+  display: block;
+}
+
+.work-description {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Our team */
+
+.team {
+  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: $background-color;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-unit {
+  width: 270px;
+  height: 422px;
+
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  background-color: $white-color;
+
+  & + & {
+    margin-left: 40px;
+  }
+}
+
+.team-image {
+  margin-bottom: 30px;
+}
+
+.team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team-description {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.network-item + .network-item {
+  margin-left: 10px;
+}
+
+.social-networks .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  transition: color $time-delay $time-fuction,
+    background-color $time-delay $time-fuction;
+
+  border-radius: 50%;
+  color: $social-networks-color;
+  background-color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* Regular customers */
+.regular-customers {
+  margin-bottom: 94px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: start;
+}
+
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+
+  transition: color $time-delay $time-fuction, border $time-delay $time-fuction;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $social-networks-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.customer-icon {
+  fill: currentColor;
+}

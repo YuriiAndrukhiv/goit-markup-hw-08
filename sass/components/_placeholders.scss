@@ -1,0 +1,41 @@
+%header-links {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color $time-delay $time-fuction;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+%buttons {
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Global properties for the "Join-in" and "Subscribe" titles */
+%global-titles {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+/* Global ptoperties for the "form-input" and "textarea" classes when focus is active. */
+%global-decorates:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}

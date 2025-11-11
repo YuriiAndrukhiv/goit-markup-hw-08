@@ -1,0 +1,141 @@
+/*----------------------FOOTER--------------------------*/
+
+footer {
+  background-color: $footer-background;
+}
+
+.content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* Footer-contacts */
+.footer-contacts {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+// /* Footer logo */
+// .footer-logo {
+//   display: block;
+//   margin-bottom: 20px;
+// }
+
+// .footer-logo .second-word-logo {
+//   @include logo($white-color);
+// }
+
+address {
+  margin-bottom: 9px;
+
+  font-family: $first-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white-color;
+}
+
+.mail {
+  margin-bottom: 9px;
+}
+
+.contacts .link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white-color;
+}
+
+/* Join-in */
+.join-in-title {
+  @extend %global-titles;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media .item + .item {
+  margin-left: 10px;
+}
+
+.social-media .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  transition: background-color $time-delay $time-fuction;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+/* Subscribe */
+.subscribe-title {
+  @extend %global-titles;
+}
+
+.form-subscribe {
+  width: 570px;
+}
+
+.subscribe-items {
+  display: flex;
+
+  align-items: center;
+  margin: 0;
+}
+
+.subscribe-items .item + .item {
+  margin-left: 12px;
+}
+
+.footer-email {
+  margin: 0;
+  min-width: 358px;
+  min-height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  color: $white-color;
+}
+
+/* Footer-button */
+.footer-button {
+  @extend %buttons;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  text-decoration: none;
+}
+
+.icon-send {
+  position: absolute;
+
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,41 @@
+/* Modal window */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 528px;
+  min-height: 581px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $time-delay $time-fuction;
+
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background: $white-color;
+}
+
+.link-close {
+  display: inline-block;
+  margin-left: 490px;
+  margin-right: 8px;
+  margin-top: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  transition: color $time-delay $time-fuction;
+
+  color: $additional-black-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-close {
+  fill: currentColor;
+}
