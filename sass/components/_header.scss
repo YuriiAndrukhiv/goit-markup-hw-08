@@ -9,69 +9,60 @@ header {
   }
 }
 
-// /* Header logo */
-// .logo {
-//   text-decoration: none;
-// }
-
-// .first-word-logo {
-//   @include logo($accent-color);
-// }
-
-// .second-word-logo {
-//   @include logo($additional-black-color);
-// }
-
 /* Site-nav  */
-.site-nav {
+.icon-menu {
   display: flex;
-  margin-left: 86px;
+  margin-left: 276px;
 }
+// .site-nav {
+//   display: flex;
+//   margin-left: 86px;
+// }
 
-.nav-item {
-  position: relative;
+// .nav-item {
+//   position: relative;
 
-  & + & {
-    margin-left: 50px;
-  }
-}
+//   & + & {
+//     margin-left: 50px;
+//   }
+// }
 
-.nav-link {
-  @extend %header-links;
-  color: $primary-text-color;
+// .nav-link {
+//   @extend %header-links;
+//   color: $primary-text-color;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
 
 /* Contacts-nav */
-.contacts-nav {
-  display: flex;
-  margin-left: auto;
+// .contacts-nav {
+//   display: flex;
+//   margin-left: auto;
 
-  text-decoration: none;
-  color: $secondary-text-color;
-}
+//   text-decoration: none;
+//   color: $secondary-text-color;
+// }
 
-.contacts-item + .contacts-item {
-  margin-left: 30px;
-}
+// .contacts-item + .contacts-item {
+//   margin-left: 30px;
+// }
 
-.contacts-link {
-  @extend %header-links;
-  color: $secondary-text-color;
+// .contacts-link {
+//   @extend %header-links;
+//   color: $secondary-text-color;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
 
-.icon-envelope,
-.icon-smartphone {
-  margin-right: 10px;
+// .icon-envelope,
+// .icon-smartphone {
+//   margin-right: 10px;
 
-  fill: currentColor;
-}
+//   fill: currentColor;
+// }
