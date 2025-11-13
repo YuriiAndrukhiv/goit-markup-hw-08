@@ -137,6 +137,14 @@ header .header-nav {
 
 /* Contacts-nav */
 /*----------------------STUDIO--------------------------*/
+/* Section */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 36px;
+  text-align: center;
+}
+
 /* Hero */
 .hero {
   margin-bottom: 94px;
@@ -175,14 +183,6 @@ header .header-nav {
   border: none;
 }
 
-/* Section */
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
-  text-align: center;
-}
-
 /* Feature */
 .feature {
   margin-top: 0;
@@ -190,29 +190,27 @@ header .header-nav {
 }
 
 .feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.feature-item {
-  width: 270px;
-  height: 251px;
-}
-.feature-item + .feature-item {
-  margin-left: 30px;
+.feature-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .background {
   display: block;
-  padding: 25px 100px;
-  margin-bottom: 10px;
+  width: 450px;
+  height: 120px;
+  padding: 25px 190px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 
 .feature-title {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   text-transform: uppercase;
 }
