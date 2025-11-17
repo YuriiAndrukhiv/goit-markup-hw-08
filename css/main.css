@@ -186,12 +186,7 @@ header .header-nav {
 /* Feature */
 .feature {
   margin-top: 0;
-  margin-bottom: 94px;
-}
-
-.feature-list {
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .feature-item:not(:last-child) {
@@ -277,28 +272,19 @@ header .header-nav {
 
 /* Our team */
 .team {
-  margin-bottom: 94px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .team-unit {
-  width: 270px;
-  height: 422px;
+  width: 450px;
+  height: 482px;
   border-radius: 0 0 4px 4px;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
-}
-.team-unit + .team-unit {
-  margin-left: 40px;
 }
 
 .team-image {
@@ -365,20 +351,7 @@ header .header-nav {
 
 /* Regular customers */
 .regular-customers {
-  margin-bottom: 94px;
-}
-
-.customers-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.customers-item + .customers-item {
-  margin-left: 30px;
+  margin-bottom: 60px;
 }
 
 .customer-link {
