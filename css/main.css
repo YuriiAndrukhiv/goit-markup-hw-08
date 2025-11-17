@@ -224,9 +224,15 @@ header .header-nav {
 }
 
 /* Our work */
+@media (max-width: 1229px) {
+  .work {
+    display: none;
+  }
+}
+
 .work {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
 .work-list {

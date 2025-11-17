@@ -117,9 +117,15 @@
 /* Our work */
 
 .work {
+  @media  (max-width: 1229px) {
+    display: none;
+  }
+}
+
+.work {
   margin-top: 0;
   // margin-bottom: 94px;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
 .work-list {
