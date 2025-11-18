@@ -260,23 +260,33 @@
 /* Regular customers */
 .regular-customers {
   // margin-bottom: 94px;
-   margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-// .customers-list {
-//   display: flex;
-//   justify-content: start;
-// }
+.customers-list {
+  display: flex;
+  // justify-content: start;
+  flex-wrap: wrap;
+  // margin-left: auto;
+  // margin-right: auto;
+}
 
 // .customers-item + .customers-item {
 //   margin-left: 30px;
 // }
 
+.customers-item {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  // flex-basis: 50%;
+}
+
 .customer-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
+  width: 210px;
   height: 90px;
 
   transition: color $time-delay $time-fuction, border $time-delay $time-fuction;
