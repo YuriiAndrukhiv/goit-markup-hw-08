@@ -534,29 +534,19 @@ header .header-nav {
 
 /*----------------------FOOTER--------------------------*/
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 /* Footer-contacts */
 .footer-contacts {
-  margin-top: 60px;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -565,7 +555,7 @@ address {
 }
 
 .mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts .link {
@@ -573,14 +563,25 @@ address {
   text-decoration: none;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: #afb1b8;
 }
 
 /* Join-in */
+.join-in {
+  margin-bottom: 60px;
+}
+
+.join-in-title {
+  text-align: center;
+}
+
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-media .item + .item {
@@ -613,22 +614,8 @@ address {
   width: 570px;
 }
 
-.subscribe-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-}
-
-.subscribe-items .item + .item {
-  margin-left: 12px;
-}
-
 .footer-email {
-  margin: 0;
+  margin-bottom: 20px;
   min-width: 358px;
   min-height: 50px;
   padding-left: 16px;
@@ -646,6 +633,7 @@ address {
 
 /* Footer-button */
 .footer-button {
+  width: 200px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,13 +716,6 @@ address {
 }
 
 /* ---------------------------------Form----------------------------------- */
-form {
-  width: 448px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-}
-
 .form-title {
   margin-top: 0px;
   margin-bottom: 30px;
