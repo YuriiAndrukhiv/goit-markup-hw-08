@@ -267,6 +267,7 @@
   display: flex;
   // justify-content: start;
   flex-wrap: wrap;
+  gap: 30px;
   // margin-left: auto;
   // margin-right: auto;
 }
@@ -276,9 +277,7 @@
 // }
 
 .customers-item {
-  margin-right: 15px;
-  margin-bottom: 30px;
-  // flex-basis: 50%;
+  width: calc((100% - 1 * 30px) / 2);
 }
 
 .customer-link {

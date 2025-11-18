@@ -360,11 +360,11 @@ header .header-nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .customers-item {
-  margin-right: 15px;
-  margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
 }
 
 .customer-link {
