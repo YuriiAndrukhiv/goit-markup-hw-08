@@ -1,19 +1,18 @@
 /*-------------------------PORTFOLIO--------------------*/
 
 .portfolio {
-  margin-top: 93px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* Filters */
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  max-width: 362px;
+  margin-bottom: 40px;
 
-.filter-item + .filter-item {
-  margin-left: 8px;
+  gap: 15px 8px;
 }
 
 .filters button {
@@ -48,16 +47,11 @@
 }
 
 .portfolio-item {
-  width: 370px;
+  width: 450px;
   height: 404px;
-  margin-right: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 7) {
+  &:last-child {
     margin-bottom: 0;
   }
 }
