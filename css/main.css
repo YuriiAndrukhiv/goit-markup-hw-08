@@ -133,6 +133,10 @@ header .header-nav {
   margin-left: 276px;
   margin-top: 22px;
   margin-bottom: 22px;
+  fill: currentColor;
+}
+.icon-menu:hover {
+  color: #2196f3;
 }
 
 /*----------------------STUDIO--------------------------*/

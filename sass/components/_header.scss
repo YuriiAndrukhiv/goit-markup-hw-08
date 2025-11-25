@@ -16,4 +16,10 @@ header {
   margin-left: 276px;
   margin-top: 22px;
   margin-bottom: 22px;
+  fill: currentColor;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
+
