@@ -137,6 +137,7 @@ header .header-nav {
 }
 .icon-menu:hover {
   color: #2196f3;
+  cursor: pointer;
 }
 
 /*----------------------STUDIO--------------------------*/
