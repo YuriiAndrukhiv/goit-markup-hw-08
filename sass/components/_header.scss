@@ -10,6 +10,14 @@ header {
 }
 
 /* Site-nav  */
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .icon-menu {
   display: flex;
 
@@ -21,7 +29,5 @@ header {
   &:hover {
     color: $accent-color;
     cursor: pointer;
-    
   }
 }
-
