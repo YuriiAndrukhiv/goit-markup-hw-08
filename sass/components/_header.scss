@@ -6,24 +6,33 @@ header {
   .header-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
 /* Site-nav  */
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 22px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .icon-menu {
   display: flex;
-
-  margin-left: 276px;
-  margin-top: 22px;
-  margin-bottom: 22px;
   fill: currentColor;
 
   &:hover {
