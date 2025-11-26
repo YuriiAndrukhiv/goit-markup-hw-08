@@ -18,26 +18,6 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
-}
-
-.menu-button .icon-close {
-  display: none;
-}
-.menu-button.is-open .icon-close {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.icon-menu {
-  display: flex;
-
-  width: 24px;
-  height: 16px;
-
-  fill: currentColor;
 
   &:hover {
     color: $accent-color;
@@ -46,15 +26,17 @@ header {
 }
 
 .icon-cross {
-  display: flex;
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
 
-  width: 19px;
-  height: 19px;
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
+.icon-menu,
+.icon-cross {
   fill: currentColor;
-
-  &:hover {
-    color: $accent-color;
-    cursor: pointer;
-  }
 }

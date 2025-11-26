@@ -139,12 +139,16 @@ header .header-nav {
   border: none;
   background-color: transparent;
 }
+.menu-button:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
 
-.menu-button .icon-close {
+.icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
@@ -152,30 +156,9 @@ header .header-nav {
   display: none;
 }
 
-.icon-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 24px;
-  height: 16px;
-  fill: currentColor;
-}
-.icon-menu:hover {
-  color: #2196f3;
-  cursor: pointer;
-}
-
+.icon-menu,
 .icon-cross {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 19px;
-  height: 19px;
   fill: currentColor;
-}
-.icon-cross:hover {
-  color: #2196f3;
-  cursor: pointer;
 }
 
 /*----------------------STUDIO--------------------------*/
