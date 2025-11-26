@@ -33,6 +33,24 @@ header {
 
 .icon-menu {
   display: flex;
+
+  width: 24px;
+  height: 16px;
+
+  fill: currentColor;
+
+  &:hover {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.icon-cross {
+  display: flex;
+
+  width: 19px;
+  height: 19px;
+
   fill: currentColor;
 
   &:hover {
