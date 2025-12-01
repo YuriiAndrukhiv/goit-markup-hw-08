@@ -139,7 +139,7 @@ header .header-nav {
   border: none;
   background-color: transparent;
 }
-.menu-button:hover {
+.menu-button:hover, .menu-button:focus {
   color: #2196f3;
   cursor: pointer;
 }

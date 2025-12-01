@@ -19,7 +19,7 @@ header {
   border: none;
   background-color: transparent;
 
-  &:hover {
+  &:hover, &:focus {
     color: $accent-color;
     cursor: pointer;
   }
