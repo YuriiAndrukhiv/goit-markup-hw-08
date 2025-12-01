@@ -26,7 +26,13 @@
           ><span class="second-word-logo"> Studio </span></a
         >
         <nav>
-          <button type="button" class="menu-button is-open" data-menu-button>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg width="24" height="19" aria-label="Mobile menu toggle">
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
               <use
@@ -35,6 +41,8 @@
               ></use>
             </svg>
           </button>
+
+          <div class="menu-container" id="menu-container" data-menu>Контент меню</div>
         </nav>
       </div>
     </header>
@@ -321,66 +329,42 @@
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="customers-list list">
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #1"
-              >
+              <a class="customer-link" href="" aria-label="Client link #1">
                 <svg class="customer-icon" width="44" height="49">
                   <use href="./images/icons.svg#icon-client-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #2"
-              >
+              <a class="customer-link" href="" aria-label="Client link #2">
                 <svg class="customer-icon" width="40" height="52">
                   <use href="./images/icons.svg#icon-client-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #3"
-              >
+              <a class="customer-link" href="" aria-label="Client link #3">
                 <svg class="customer-icon" width="41" height="43">
                   <use href="./images/icons.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #4"
-              >
+              <a class="customer-link" href="" aria-label="Client link #4">
                 <svg class="customer-icon" width="80" height="42">
                   <use href="./images/icons.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #5"
-              >
+              <a class="customer-link" href="" aria-label="Client link #5">
                 <svg class="customer-icon" width="59" height="47">
                   <use href="./images/icons.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
-              <a
-                class="customer-link"
-                href=""
-                aria-label="Client link #6"
-              >
+              <a class="customer-link" href="" aria-label="Client link #6">
                 <svg class="customer-icon" width="88" height="45">
                   <use href="./images/icons.svg#icon-client-6"></use>
                 </svg>
