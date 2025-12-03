@@ -20,8 +20,8 @@ body {
     width: $tablet;
   }
 
-  @media screen and (min-width: 1230px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
