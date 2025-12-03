@@ -67,11 +67,11 @@
 }
 
 .background {
-  display: block;
-
-  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   height: 120px;
-  padding: 25px 190px;
   margin-bottom: 30px;
 
   background-color: $background-color;

@@ -87,7 +87,7 @@ body {
 }
 @media screen and (min-width: 1230px) {
   .container {
-    width: 1230px;
+    width: 1200px;
   }
 }
 
@@ -236,10 +236,16 @@ header .header-nav {
 }
 
 .background {
-  display: block;
-  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 120px;
-  padding: 25px 190px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
