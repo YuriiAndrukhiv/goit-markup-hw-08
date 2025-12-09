@@ -63,7 +63,19 @@
 }
 
 .feature-list {
-  
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.feature-item {
+  width: 100%; // мобільна версія
+
+  @media screen and (min-width: $tablet) {
+    width: calc(50% - 15px); // половина ширини мінус половина gap
+  }
 }
 
 .feature-item:not(:last-child) {
@@ -74,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   height: 120px;
   margin-bottom: 30px;
 
@@ -100,12 +112,6 @@
 }
 
 /* Our work */
-.work {
-  @media (max-width: 1229px) {
-    display: none;
-  }
-}
-
 .work {
   margin-top: 0;
   margin-bottom: 60px;
