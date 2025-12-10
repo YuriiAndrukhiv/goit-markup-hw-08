@@ -35,7 +35,7 @@
 }
 
 /* Global ptoperties for the "form-input" and "textarea" classes when focus is active. */
-%global-decorates:focus {
+%global-decorates {
   outline: none;
   border: 1px solid #2196f3;
 }
