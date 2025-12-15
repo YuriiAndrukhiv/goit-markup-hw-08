@@ -66,7 +66,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    
+
     gap: 30px;
   }
 
@@ -252,21 +252,44 @@
 }
 
 .customers-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
 
-  gap: 30px;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.customers-list {
+  display: flex;
+  justify-content: start;
 }
 
 .customers-item {
-  width: calc((100% - 1 * 30px) / 2);
+  @media screen and (min-width: $mobile) {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    .customers-item + .customers-item {
+      margin-left: 30px;
+    }
+  }
 }
 
 .customer-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  width: 170px;
   height: 90px;
 
   transition: color $time-delay $time-fuction, border $time-delay $time-fuction;
