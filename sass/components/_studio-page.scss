@@ -66,20 +66,32 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    
     gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
   }
 }
 
 .feature-item {
-  width: 100%; // мобільна версія
-
   @media screen and (min-width: $tablet) {
     width: calc(50% - 15px); // половина ширини мінус половина gap
   }
-}
 
-.feature-item:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    height: 251px;
+
+    & + & {
+      margin-left: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .background {
@@ -115,6 +127,10 @@
 .work {
   margin-top: 0;
   margin-bottom: 60px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work-list {
