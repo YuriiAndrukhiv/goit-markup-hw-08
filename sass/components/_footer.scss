@@ -132,8 +132,8 @@ address {
   margin: 0 auto;
 
   @media screen and (min-width: $desktop) {
-    width: 570px; // Фіксована ширина для desktop
-    margin: 0; // Скинути margin для вирівнювання праворуч
+    width: 570px;
+    margin: 0; 
   }
 }
 
@@ -151,16 +151,18 @@ address {
   }
 
   .item + .item {
-    margin-top: 15px;
+  margin-top: 15px;
 
-    @media screen and (min-width: $desktop) {
-      margin-top: 0;
-      margin-left: 12px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 
-.subscribe-items .footer-email {
+}
+
+.subscribe-items 
+.footer-email {
   margin-bottom: 20px;
 
   min-width: 450px;
