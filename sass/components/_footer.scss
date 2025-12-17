@@ -19,6 +19,20 @@ footer {
   }
 }
 
+.footer-info {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop) {
+    .element + .element {
+      margin-top: 71px;
+      margin-left: 69px;
+    }
+  }
+}
+
 /* Footer-contacts */
 .footer-contacts {
   margin-bottom: 60px;
@@ -133,7 +147,7 @@ address {
 
   @media screen and (min-width: $desktop) {
     width: 570px;
-    margin: 0; 
+    margin: 0;
   }
 }
 
@@ -151,18 +165,16 @@ address {
   }
 
   .item + .item {
-  margin-top: 15px;
+    margin-top: 15px;
 
-  @media screen and (min-width: $desktop) {
-    margin-top: 0;
-    margin-left: 12px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
 }
 
-}
-
-.subscribe-items 
-.footer-email {
+.subscribe-items .footer-email {
   margin-bottom: 20px;
 
   min-width: 450px;

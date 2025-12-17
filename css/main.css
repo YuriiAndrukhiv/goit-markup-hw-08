@@ -666,6 +666,22 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-info .element + .element {
+    margin-top: 71px;
+    margin-left: 69px;
+  }
+}
+
 /* Footer-contacts */
 .footer-contacts {
   margin-bottom: 60px;
