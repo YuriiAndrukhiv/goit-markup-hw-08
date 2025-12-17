@@ -645,11 +645,37 @@ footer {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 /* Footer-contacts */
 .footer-contacts {
   margin-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-top: 60px;
+    text-align: initial;
+  }
 }
 
 address {
@@ -660,9 +686,19 @@ address {
   line-height: 24px;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  address {
+    margin-bottom: 9px;
+  }
+}
 
 .mail {
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .mail {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts .link {
@@ -672,14 +708,29 @@ address {
   line-height: 24px;
   color: #afb1b8;
 }
+@media screen and (min-width: 1200px) {
+  .contacts .link {
+    color: #ffffff;
+  }
+}
 
 /* Join-in */
 .join-in {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .join-in {
+    margin-bottom: initial;
+  }
+}
 
 .join-in-title {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .join-in-title {
+    text-align: initial;
+  }
 }
 
 .social-media {
@@ -689,6 +740,13 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .social-media {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
 }
 
 .social-media .item + .item {
@@ -718,14 +776,72 @@ address {
 
 /* Subscribe */
 .subscribe-title {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-title {
+    display: block;
+  }
 }
 
 .form-subscribe {
-  width: 570px;
+  width: 100px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    width: 570px;
+    margin: 0;
+  }
 }
 
-.footer-email {
+.subscribe-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+}
+.subscribe-items .item + .item {
+  margin-top: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-items .item + .item {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
+
+.subscribe-items .footer-email {
   margin-bottom: 20px;
   min-width: 450px;
   min-height: 50px;
@@ -741,10 +857,15 @@ address {
   background: rgba(33, 150, 243, 0);
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe-items .footer-email {
+    margin: 0;
+    min-width: 358px;
+  }
+}
 
 /* Footer-button */
 .footer-button {
-  width: 200px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,8 +873,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;

@@ -4,6 +4,19 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $footer-background;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.content {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 /* Footer-contacts */
@@ -11,20 +24,33 @@ footer {
   margin-bottom: 60px;
 
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 60px;
+
+    text-align: initial;
+  }
 }
 
 address {
   margin-bottom: 8px;
-
   font-family: $first-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $white-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .mail {
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts .link {
@@ -33,21 +59,37 @@ address {
   font-size: 14px;
   line-height: 24px;
   color: $social-networks-color;
+
+  @media screen and (min-width: $desktop) {
+    color: $white-color;
+  }
 }
 
 /* Join-in */
 .join-in {
   margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: initial;
+  }
 }
 
 .join-in-title {
   @extend %global-titles;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: initial;
+  }
 }
 
 .social-media {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: initial;
+  }
 }
 
 .social-media .item + .item {
@@ -75,14 +117,50 @@ address {
 /* Subscribe */
 .subscribe-title {
   @extend %global-titles;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .form-subscribe {
-  width: 570px;
+  width: 100px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    width: 570px; // Фіксована ширина для desktop
+    margin: 0; // Скинути margin для вирівнювання праворуч
+  }
 }
 
-.footer-email {
+.subscribe-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .item + .item {
+    margin-top: 15px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
+  }
+}
+
+.subscribe-items .footer-email {
   margin-bottom: 20px;
 
   min-width: 450px;
@@ -98,20 +176,23 @@ address {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   color: $white-color;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+
+    min-width: 358px;
+  }
 }
 
 /* Footer-button */
 .footer-button {
   @extend %buttons;
-  width: 200px;
 
   position: relative;
 
   display: flex;
   align-items: center;
 
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
