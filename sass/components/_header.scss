@@ -133,6 +133,8 @@ header {
   /* Contacts-nav */
   .contacts-nav {
     display: flex;
+    flex-direction: initial;
+
     margin-left: auto;
 
     text-decoration: none;
