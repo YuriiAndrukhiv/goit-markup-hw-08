@@ -149,14 +149,6 @@ header .header-nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
-  header .header-nav {
-    position: initial;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-  }
-}
 
 /* Site-nav  */
 @media screen and (min-width: 480px) {
@@ -249,6 +241,11 @@ header .header-nav {
 .menu-button:hover, .menu-button:focus {
   color: #2196f3;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-button {

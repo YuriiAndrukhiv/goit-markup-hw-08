@@ -9,20 +9,90 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media screen and (min-width: $desktop) {
-      position: initial;
-      justify-content: initial;
-    }
   }
 }
 
 /* Site-nav  */
-
 @media screen and (min-width: $mobile) {
   .site-nav,
   .contacts-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .site-nav {
+    display: flex;
+    margin-left: 86px;
+  }
+
+  .nav-item {
+    position: relative;
+
+    & + & {
+      margin-left: 50px;
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color $time-delay $time-fuction;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  /* Contacts-nav */
+  .contacts-nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    text-decoration: none;
+    color: $secondary-text-color;
+  }
+
+  .contacts-item + .contacts-item {
+    margin-left: 30px;
+  }
+
+  .contacts-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color $time-delay $time-fuction;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .icon-envelope,
+  .icon-smartphone {
+    margin-right: 10px;
+
+    fill: currentColor;
   }
 }
 
@@ -41,17 +111,17 @@ header {
   }
 
   .nav-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  transition: color $time-delay $time-fuction;
+    transition: color $time-delay $time-fuction;
 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color: $primary-text-color;
 
     &:hover,
@@ -74,17 +144,17 @@ header {
   }
 
   .contacts-link {
-     display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  transition: color $time-delay $time-fuction;
+    transition: color $time-delay $time-fuction;
 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color: $secondary-text-color;
 
     &:hover,
@@ -115,6 +185,10 @@ header {
   &:focus {
     color: $accent-color;
     cursor: pointer;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 
   @media screen and (min-width: $desktop) {
