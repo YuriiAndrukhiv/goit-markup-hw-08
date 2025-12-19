@@ -13,6 +13,12 @@ header {
 }
 
 /* Site-nav  */
+
+.site-nav,
+.contacts-nav {
+  display: none;
+}
+
 @media screen and (min-width: $mobile) {
   .site-nav,
   .contacts-nav {
