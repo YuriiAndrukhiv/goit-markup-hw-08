@@ -25,6 +25,10 @@
     justify-content: center;
 
     max-width: initial;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
 }
@@ -63,10 +67,26 @@
 .portfolio-item {
   width: 450px;
   height: 404px;
+
   margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+
+    margin-right: 45px;
+    margin-bottom: 45px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 7) {
+      margin-bottom: 0;
+    }
   }
 }
 
