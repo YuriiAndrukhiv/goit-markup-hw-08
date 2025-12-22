@@ -638,6 +638,12 @@ header .header-nav {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 93px;
+    margin-bottom: 94px;
+  }
+}
 
 /* Filters */
 .filters {
@@ -649,6 +655,17 @@ header .header-nav {
   max-width: 362px;
   margin-bottom: 40px;
   gap: 15px 8px;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: initial;
+    margin-bottom: 50px;
+  }
 }
 
 .filters button {
