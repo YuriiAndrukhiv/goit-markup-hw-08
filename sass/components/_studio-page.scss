@@ -177,15 +177,27 @@
   background-color: $background-color;
 }
 
-.team-unit {
-  width: 450px;
-  height: 482px;
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
 
+  gap: 30px;
+}
+
+.team-unit {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
   background-color: $white-color;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .team-image {
