@@ -321,36 +321,24 @@
 }
 
 .customers-list {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    gap: 30px;
-  }
+  gap: 30px;
 
   @media screen and (min-width: $desktop) {
     flex-wrap: nowrap;
   }
 }
 
-.customers-list {
-  display: flex;
-  justify-content: start;
-}
-
 .customers-item {
-  @media screen and (min-width: $mobile) {
-    width: calc((100% - 1 * 30px) / 2);
-  }
+  // @media screen and (min-width: $mobile) {
+  //   width: calc((100% - 30px) / 2);
+  // }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 2 * 30px) / 3);
-  }
-
-  @media screen and (min-width: $desktop) {
-    .customers-item + .customers-item {
-      margin-left: 30px;
-    }
+    width: calc((100% - 60px) / 3);
   }
 }
 
