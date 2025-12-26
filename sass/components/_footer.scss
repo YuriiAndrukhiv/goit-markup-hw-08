@@ -165,10 +165,9 @@ address {
   }
 
   .item + .item {
-    margin-top: 15px;
+    margin-top: 0;
 
     @media screen and (min-width: $desktop) {
-      margin-top: 0;
       margin-left: 12px;
     }
   }
@@ -176,12 +175,13 @@ address {
 
 .subscribe-items .footer-email {
   margin-bottom: 20px;
-
-  min-width: 450px;
-  min-height: 50px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  width: 100%;
+  min-width: 400px;
+  min-height: 50px;
 
   font-size: 16px;
   line-height: 20px;
@@ -190,6 +190,10 @@ address {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   color: $white-color;
+
+  @media screen and (min-width: $mobile) {
+    min-width: 450px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin: 0;
@@ -207,6 +211,7 @@ address {
   display: flex;
   align-items: center;
 
+  margin-top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
