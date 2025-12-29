@@ -1045,7 +1045,8 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  min-width: 400px;
+  max-width: 450px;
+  min-width: 0;
   min-height: 50px;
   font-size: 16px;
   line-height: 20px;
@@ -1055,11 +1056,6 @@ address {
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
   color: #ffffff;
-}
-@media screen and (min-width: 480px) {
-  .subscribe-items .footer-email {
-    min-width: 450px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-items .footer-email {

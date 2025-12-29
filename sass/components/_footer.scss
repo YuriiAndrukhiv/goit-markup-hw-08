@@ -180,7 +180,8 @@ address {
   padding-bottom: 15px;
 
   width: 100%;
-  min-width: 400px;
+  max-width: 450px;
+  min-width: 0;
   min-height: 50px;
 
   font-size: 16px;
@@ -192,7 +193,7 @@ address {
   color: $white-color;
 
   @media screen and (min-width: $mobile) {
-    min-width: 450px;
+    
   }
 
   @media screen and (min-width: $desktop) {
