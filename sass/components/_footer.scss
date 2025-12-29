@@ -142,7 +142,7 @@ address {
 }
 
 .form-subscribe {
-  width: 100px;
+  width: 100%;
   margin: 0 auto;
 
   @media screen and (min-width: $desktop) {
@@ -173,15 +173,13 @@ address {
   }
 }
 
-.subscribe-items .footer-email {
+.footer-email {
   margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
 
   width: 100%;
-  max-width: 450px;
-  min-width: 0;
   min-height: 50px;
 
   font-size: 16px;
@@ -192,8 +190,8 @@ address {
   background: rgba(33, 150, 243, 0);
   color: $white-color;
 
-  @media screen and (min-width: $mobile) {
-    
+  @media screen and (min-width: $tablet) {
+    max-width: 450px;
   }
 
   @media screen and (min-width: $desktop) {

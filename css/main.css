@@ -990,7 +990,7 @@ address {
 }
 
 .form-subscribe {
-  width: 100px;
+  width: 100%;
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
@@ -1039,14 +1039,12 @@ address {
   }
 }
 
-.subscribe-items .footer-email {
+.footer-email {
   margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  max-width: 450px;
-  min-width: 0;
   min-height: 50px;
   font-size: 16px;
   line-height: 20px;
@@ -1057,8 +1055,13 @@ address {
   background: rgba(33, 150, 243, 0);
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer-email {
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .subscribe-items .footer-email {
+  .footer-email {
     margin: 0;
     min-width: 358px;
   }
