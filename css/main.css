@@ -544,6 +544,9 @@ header .header-nav {
 
 .team-image {
   margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team-name {
