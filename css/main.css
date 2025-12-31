@@ -526,6 +526,7 @@ header .header-nav {
 }
 
 .team-member {
+  width: 100%;
   border-radius: 0 0 4px 4px;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -742,6 +743,9 @@ header .header-nav {
   gap: 30px;
 }
 
+.portfolio-item {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: calc((100% - 30px) / 2);
@@ -774,6 +778,8 @@ header .header-nav {
 
 .portfolio-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-overlay {
