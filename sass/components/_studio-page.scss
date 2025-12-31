@@ -192,14 +192,15 @@
 
 .work-list {
   display: flex;
+
+  gap: 30px;
 }
 
 .work-item {
   position: relative;
 
-  & + & {
-    margin-left: 45px;
-  }
+  margin: 0;
+  padding: 0;
 }
 
 .work-image {
