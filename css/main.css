@@ -441,10 +441,15 @@ header .header-nav {
   padding-top: 200px;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 60px;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+  }
 }
 
 .hero-button {
