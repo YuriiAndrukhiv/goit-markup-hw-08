@@ -160,6 +160,7 @@ header {
   fill: currentColor;
 }
 
+/* ------------------ Mobile container ------------------ */
 .menu-container {
   position: relative;
 
@@ -186,23 +187,13 @@ header {
   }
 }
 
-.site-nav2 {
-  display: inline;
-}
-
-.nav-item2 {
-  position: relative;
-
-
-
-  & {
+.nav-item2:not(:last-child) {
     margin-bottom: 40px;
-  }
 }
 
 .nav-link2 {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
 
   transition: color $time-delay $time-fuction;
 
@@ -240,6 +231,7 @@ header {
   &::after {
     position: absolute;
 
+left:0;
     bottom: 0;
 
     content: '';
