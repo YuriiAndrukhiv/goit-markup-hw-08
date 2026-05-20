@@ -152,6 +152,11 @@ header .header-nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1199px) {
+  header .header-nav {
+    width: 100%;
+  }
+}
 
 /* Site-nav  */
 .site-nav,
@@ -301,7 +306,6 @@ header .header-nav {
 
 /* ------------------ Mobile container ------------------ */
 .menu-container {
-  position: relative;
   background-color: #ffffff;
   text-align: center;
   font-size: 20px;
@@ -327,16 +331,16 @@ header .header-nav {
   }
 }
 
-.site-nav2 {
+.menu-nav {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.nav-item2:not(:last-child) {
+.menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.nav-link2 {
+.menu-link {
   position: relative;
   display: inline-block;
   padding-top: 8px;
@@ -349,19 +353,33 @@ header .header-nav {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.nav-link2:hover, .nav-link2:focus {
+.menu-link:hover, .menu-link:focus {
   color: #2196f3;
 }
 
-.contacts-nav2 {
+.active {
+  color: #2196f3;
+}
+.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #2196f3;
+}
+
+.menu-contacts {
   margin-bottom: 60px;
 }
 
-.contacts-item2:not(:last-child) {
+.menu-contacts-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.contacts-link2 {
+.menu-contacts-link {
   display: block;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -371,22 +389,8 @@ header .header-nav {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.contacts-link2:hover, .contacts-link2:focus {
+.menu-contacts-link:hover, .menu-contacts-link:focus {
   color: #2196f3;
-}
-
-.current2 {
-  color: #2196f3;
-}
-.current2::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: #2196f3;
 }
 
 /*----------------------STUDIO--------------------------*/

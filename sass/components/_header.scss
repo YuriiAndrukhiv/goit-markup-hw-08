@@ -9,6 +9,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
   }
 }
 
@@ -162,8 +166,6 @@ header {
 
 /* ------------------ Mobile container ------------------ */
 .menu-container {
-  position: relative;
-
   background-color: $white-color;
   text-align: center;
   font-size: 20px;
@@ -191,16 +193,16 @@ header {
   }
 }
 
-.site-nav2 {
+.menu-nav {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.nav-item2:not(:last-child) {
+.menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.nav-link2 {
+.menu-link {
   position: relative;
   display: inline-block;
 
@@ -221,31 +223,7 @@ header {
   }
 }
 
-.contacts-nav2 {
-  margin-bottom: 60px;
-}
-
-.contacts-item2:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.contacts-link2 {
-  display: block;
-
-  transition: color $time-delay $time-fuction;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  color: $secondary-text-color;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.current2 {
+.active {
   color: $accent-color;
 
   &::after {
@@ -260,5 +238,29 @@ header {
 
     border-radius: 2px;
     background: $accent-color;
+  }
+}
+
+.menu-contacts {
+  margin-bottom: 60px;
+}
+
+.menu-contacts-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.menu-contacts-link {
+  display: block;
+
+  transition: color $time-delay $time-fuction;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
