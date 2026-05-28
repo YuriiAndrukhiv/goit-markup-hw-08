@@ -4,8 +4,8 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: calc(100%-30px);
+  max-width: 528px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time-delay $time-fuction;
@@ -17,10 +17,11 @@
 }
 
 .link-close {
+  position: absolute;
+  
   display: inline-block;
-  margin-left: 490px;
-  margin-right: 8px;
-  margin-top: 8px;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
