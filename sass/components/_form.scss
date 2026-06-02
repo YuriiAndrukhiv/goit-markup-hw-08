@@ -123,7 +123,8 @@ textarea {
     border-color: $accent-color;
     background-origin: border-box;
 
-    transition: background-color $time-delay $time-fuction,
+    transition:
+      background-color $time-delay $time-fuction,
       border-color $time-delay $time-fuction;
   }
 }
